@@ -129,6 +129,10 @@ setTimeout(function(){
 
 }
 // # checking 
+const initialization =function (){
+  console.log('Welcome to my company !')
+}
+
 const init = function(){
   bookmarksview.addHandlerRender(controlBookmarks);
 recipeview.addHandler(controlrecipes);
@@ -137,6 +141,8 @@ recipeview.addHandlerAddbookmark(controlAddbookmark);
 SearchView.addHandlerSearch(controlSearchResults);
 paginationView.addHandlerClick(controlPagination);
 addRecipeview._addHandkerUpload(controlAddrecipe);
+console.log('Welcome');
+initialization();
 console.log('Welcome');
 }
 init(); 
